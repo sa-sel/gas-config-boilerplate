@@ -24,4 +24,3 @@ if [ "$ENV" == "GITHUB" ]; then
 else
   clasp push --force
 fi
-

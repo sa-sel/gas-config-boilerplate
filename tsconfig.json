@@ -9,6 +9,12 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "sourceMap": true,
-    "target": "ES2019"
+    "target": "ES2019",
+    "baseUrl": "./",
+    "paths": {
+      "@models": ["src/models"],
+      "@utils/*": ["src/utils/*"],
+      "@core/*": ["src/core/*"]
+    }
   }
 }
