@@ -11,7 +11,7 @@ MERGE_REGEX="(Merge [a-z-]+ branch|Merge branch|Merge tag|Merged in|pull) .+"
 
 test "" = "$(grep -E "^($MSG_REGEX|($MERGE_REGEX))\$" "$MSG_FILE")" && {
   printf "\n❌ The commit message does not follow the policy.\n"
-  printf "⚠️ It should follow the pattern \"type(scope)[TASK] Commit message\" (e.g.: 'feat(email) #7: Create \"email preview\" view'). For more guidelines, read the project's README.\n\n"
+  printf "⚠️ It should follow the pattern \"<type>(<scope>) <TASK>: Commit message\" (e.g.: 'feat(email) #7: Create \"email preview\" view'). For more guidelines, read the project's README.\n\n"
   exit 1
 }
 
