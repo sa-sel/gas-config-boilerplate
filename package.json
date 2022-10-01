@@ -1,11 +1,15 @@
 {
+  "name": "@sa-sel/boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "license": "",
   "scripts": {
     "clasp": "scripts/setup-clasp.sh",
     "prepare": "npm run clasp; husky install; scripts/init-submodules.sh",
     "rollup": "rollup --config .rollup.js",
     "build": "mkdir -p .build && cp -r src/* .build && npm run rollup",
     "format": "eslint . --fix --quiet; prettier --write .",
-    "lint": "eslint . && prettier --check",
+    "lint": "eslint . && prettier --check .",
     "push": "scripts/push.sh"
   },
   "dependencies": {
